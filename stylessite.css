@@ -1,0 +1,363 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2e8e1; /* Bege muito claro */
+    color: #4e342e; /* Marrom escuro para o texto */
+    text-align: center;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background: linear-gradient(to right, #bcaaa4, #a1887f);
+    background-size: cover;
+    padding: 5% 10%; /* Ajuste para ser responsivo */
+    border-bottom: 1px solid #a1887f;
+    background-image: url(assests/banner1.jpg);
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Texto branco */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #a1887f; /* Marrom médio ao hover */
+    color: #ffffff; /* Texto branco ao hover */
+}
+
+/* Barra de busca */
+.search-bar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 10px 15px;
+    border: 1px solid #bcaaa4; /* Marrom claro */
+    border-radius: 25px;
+    width: 200px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    text-align: center;
+}
+
+.search-bar input:focus {
+    border-color: #a1887f; /* Marrom médio no foco */
+}
+
+.btn-search {
+    background-color: #8d6e63; /* Marrom frio */
+    color: #ffffff; /* Texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-search:hover {
+    background-color: #4e342e; /* Marrom mais escuro ao hover */
+}
+
+/* Ações do usuário */
+.user-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-actions a {
+    text-decoration: none;
+    color: #ffffff; /* Marrom médio */
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.user-actions a:hover {
+    color: #4e342e; /* Marrom mais escuro ao hover */
+}
+
+/* Principal */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Produtos */
+.produtos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produto {
+    width: 200px;
+    text-align: center;
+    background-color: #ffffff; /* Branco */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.produto img {
+    width: 100%; /* Mantém as imagens com o mesmo tamanho */
+    height: 150px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorções */
+    border-radius: 15px;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    min-height: 40px; /* Garante que todos os títulos tenham o mesmo espaço */
+}
+
+.produto p {
+    font-size: 14px;
+    color: #6d4c41;
+    min-height: 60px; /* Garante que todas as descrições tenham o mesmo espaço */
+}
+
+.produto button {
+    background-color: #6d4c41; /* Marrom médio */
+    color: #ffffff; /* Texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #4e342e; /* Marrom escuro ao hover */
+}
+
+/* Botões */
+button.secondary {
+    background-color: #bcaaa4; /* Marrom claro */
+    color: #4e342e; /* Texto marrom escuro */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.secondary:hover {
+    background-color: #8d6e63; /* Marrom frio ao hover */
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    background-color: #bcaaa4; /* Marrom claro */
+    text-align: center;
+    padding: 20px;
+    color: #ffffff; /* Texto branco */
+    border-top: 1px solid #a1887f;
+    position: static;
+}
+
+footer p {
+    color: #4e342e; /* Marrom escuro */
+}
+
+footer p a {
+    color: #4e342e; /* Links em marrom escuro */
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    .search-bar input {
+        width: 150px;
+    }
+
+    .user-actions {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    .search-bar input {
+        width: 70%;
+    }
+
+    .user-actions {
+        gap: 5px;
+    }
+
+    .produto {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+/* Seção de contato */
+
+#contato {
+
+    background-color: #ffffff; /* Fundo branco */
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contato h2 {
+    font-size: 24px;
+    color: #4e342e; /* Marrom escuro */
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 16px;
+    color: #6d4c41; /* Texto marrom */
+    margin-bottom: 30px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contato form label {
+    font-weight: bold;
+    color: #4e342e;
+}
+
+#contato form input,
+#contato form textarea {
+    padding: 15px;
+    border: 1px solid #bcaaa4; /* Marrom claro */
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contato form input:focus,
+#contato form textarea:focus {
+    border-color: #a1887f; /* Marrom médio */
+}
+
+#contato form button {
+    background-color: #8d6e63; /* Marrom frio */
+    color: #ffffff; /* Texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato form button:hover {
+    background-color: #4e342e; /* Marrom mais escuro ao hover */
+}
